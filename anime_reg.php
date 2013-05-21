@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Anime Master Registration</title>
+<script src = "JS/account.js"></script>
+<link rel = "stylesheet" href = "CSS/account.css"/>
+<link rel = "stylesheet" href = "CSS/bootstrap.css"/>
+<link rel = "shortcut icon" href = "ICONS/am_logo.jpg"/>
+</head>
+<body>
+	<div class = "myForm">
+		<form method = "POST">
+			Firstname:</br> <input type = "text" id = "fname" name = "firstname"/></br>
+			Lastname:</br> <input type = "text" id = "lname" name = "lastname"/></br>
+			Address:</br> <input type = "text" id = "address" name = "address"/></br>
+			Contact Number:</br> <input type = "text" id = "CN" name = "contact_number"/></br>
+			Email Address:</br> <input type = "text" id = "email" name = "email_ddress"/></br>
+			Username:</br> <input type = "text" id = "user" name = "username"/></br>
+			Password:</br> <input type = "password" id = "pass" name = "password"/></br>
+			Re-enter password:</br> <input type = "password" id = "pass2" name = "password2"/></br>
+									 <input type = "hidden" name = "id"/></br>
+	
+					<button id = "myReg">Submit</button>			
+		</form>
+	</div>
+</body>
+</html>
