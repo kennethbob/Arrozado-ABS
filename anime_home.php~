@@ -47,6 +47,7 @@
 			Firstname:</br> <input type = "text" id = "fname" name = "firstname"/></br>
 			Lastname:</br> <input type = "text" id = "lname" name = "lastname"/></br>
 			Address:</br> <input type = "text" id = "address" name = "address"/></br>
+			Gender:</br> <input type = "text" id = "gender" name = "gender"/></br>
 			Contact Number:</br> <input type = "text" id = "CN" name = "contact_number"/></br>
 			Email Address:</br> <input type = "text" id = "email" name = "email_ddress"/></br>
 			Username:</br> <input type = "text" id = "user" name = "username"/></br>
@@ -58,57 +59,57 @@
 		</div>
 		<div class = "modal-footer">
 			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-			<button type = "button" class="btn btn-primary">Submit</button>
+			<button type = "button" id = "myReg_btn" class="btn btn-primary">Submit</button>
 		</div>			
 	</div>
 	<div class = "collections">
 		<ul class = "firstList">
-			<li><a href = "#">Naruto Shippuden</a></li>
-			<li><a href = "#">One Piece</a></li>
-			<li><a href = "#">Bleach</a></li>
-			<li><a href = "#">Fairytail</a></li>
-			<li><a href = "#">Fullmetal Alchemist</a></li>
-			<li><a href = "#">K Anime Project</a></li>
-			<li><a href = "#">Dragon Ball</a></li>
-			<li><a href = "#">Magi</a></li>
-			<li><a href = "#">Tiger & Bunny</a></li>
-			<li><a href = "#">Reborn</a></li>
+			<li><a href = "#" id = "href">Naruto Shippuden</a></li>
+			<li><a href = "#" id = "href">One Piece</a></li>
+			<li><a href = "#" id = "href">Bleach</a></li>
+			<li><a href = "#" id = "href">Fairytail</a></li>
+			<li><a href = "#" id = "href">Fullmetal Alchemist</a></li>
+			<li><a href = "#" id = "href">K Anime Project</a></li>
+			<li><a href = "#" id = "href">Dragon Ball</a></li>
+			<li><a href = "#" id = "href">Magi</a></li>
+			<li><a href = "#" id = "href">Tiger & Bunny</a></li>
+			<li><a href = "#" id = "href">Reborn</a></li>
 		</ul>
 		<ul class = "secondList">
-			<li><a href = "#">Zetman</a></li>
-			<li><a href = "#">Neuro</a></li>
-			<li><a href = "#">Accel World</a></li>
-			<li><a href = "#">Buso Renkin</a></li>
-			<li><a href = "#">Hikaru No Go</a></li>
-			<li><a href = "#">Blue Exorcist</a></li>
-			<li><a href = "#">Death Note</a></li>
-			<li><a href = "#">I"s</a></li>
-			<li><a href = "#">Strawberry 100%</a></li>
-			<li><a href = "#">Full Moon</a></li>
+			<li><a href = "#" id = "href">Zetman</a></li>
+			<li><a href = "#" id = "href">Neuro</a></li>
+			<li><a href = "#" id = "href">Accel World</a></li>
+			<li><a href = "#" id = "href">Buso Renkin</a></li>
+			<li><a href = "#" id = "href">Hikaru No Go</a></li>
+			<li><a href = "#" id = "href">Blue Exorcist</a></li>
+			<li><a href = "#" id = "href">Death Note</a></li>
+			<li><a href = "#" id = "href">I"s</a></li>
+			<li><a href = "#" id = "href">Strawberry 100%</a></li>
+			<li><a href = "#" id = "href">Full Moon</a></li>
 		</ul>
 		<ul class = "thirdList">			
-			<li><a href = "#">Honey and Clover II</a></li>
-			<li><a href = "#">The Prince of Tennis</a></li>
-			<li><a href = "#">Nana</a></li>
-			<li><a href = "#">Ultra Maniac</a></li>
-			<li><a href = "#">Cross Game</a></li>
-			<li><a href = "#">Inuyasha</a></li>
-			<li><a href = "#">Vampire Knight</li>
-			<li><a href = "#">Kekkaishi</a></li>
-			<li><a href = "#">MAR</a></li>
-			<li><a href = "#">Blue Dragon: Trials of the 7 Shadows</a></li>
+			<li><a href = "#" id = "href">Honey and Clover II</a></li>
+			<li><a href = "#" id = "href">The Prince of Tennis</a></li>
+			<li><a href = "#" id = "href">Nana</a></li>
+			<li><a href = "#" id = "href">Ultra Maniac</a></li>
+			<li><a href = "#" id = "href">Cross Game</a></li>
+			<li><a href = "#" id = "href">Inuyasha</a></li>
+			<li><a href = "#" id = "href">Vampire Knight</li>
+			<li><a href = "#" id = "href">Kekkaishi</a></li>
+			<li><a href = "#" id = "href">MAR</a></li>
+			<li><a href = "#" id = "href">Blue Dragon: Trials of the 7 Shadows</a></li>
 		</ul>
 		<ul class = "fourthList">	
-			<li><a href = "#">Naoki Urasawa's Monster</a></li>
-			<li><a href = "#">Blue Dragon Uncut</a></li>
-			<li><a href = "#">LAGRANGE The flower of Rin-ne</a></li>
-			<li><a href = "#">Gintama</a></li>
-			<li><a href = "#">Detective Conan</a></li>
-			<li><a href = "#">Ghost Fighter</a></li>
-			<li><a href = "#">Slam Dunk</a></li>
-			<li><a href = "#">Great Teacher Onizuka</a></li>
-			<li><a href = "#">Hotarubi no Mori e</a></li>
-			<li><a href = "#">Hellsing Ultimate</a></li>
+			<li><a href = "#" id = "href">Naoki Urasawa's Monster</a></li>
+			<li><a href = "#" id = "href">Blue Dragon Uncut</a></li>
+			<li><a href = "#" id = "href">LAGRANGE The flower of Rin-ne</a></li>
+			<li><a href = "#" id = "href">Gintama</a></li>
+			<li><a href = "#" id = "href">Detective Conan</a></li>
+			<li><a href = "#" id = "href">Ghost Fighter</a></li>
+			<li><a href = "#" id = "href">Slam Dunk</a></li>
+			<li><a href = "#" id = "href">Great Teacher Onizuka</a></li>
+			<li><a href = "#" id = "href">Hotarubi no Mori e</a></li>
+			<li><a href = "#" id = "href">Hellsing Ultimate</a></li>
 		</ul>
 	</div>
 	<div class = "about">

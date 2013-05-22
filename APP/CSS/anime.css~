@@ -1,0 +1,253 @@
+body {
+	background-image: url('IMAGES/check.jpg');
+}
+.wholeDiv {
+	background-color: white;
+	width: 1000px;
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -100px;
+}
+.myTabs {
+	background-color: #000000;
+	color: #A9A9A9; 
+	height: 40px;
+	text-align: right;
+}
+#home:hover, #about:hover, #collect:hover, #login:hover, #logout:hover {	
+	color: white;
+	cursor: pointer;
+}
+#registration:hover {
+	color: #D2691E;
+}
+#home, #collect, #about, #login, #logout {
+	font-size: 12px;
+	margin-top: 10px;
+}
+#registration {
+	margin-top: 5px;
+}
+.login, .registration {
+	display: none;
+}
+.registration {
+	text-align: center;
+	background-image: url('IMAGES/anime4.jpg');
+	width: 400px;
+	position: center;
+	color: white;
+	margin-left: 500px;
+	margin-top: 100px;
+	border: 1px black solid;
+}
+#myModalLabel {
+	color: #000000;
+}
+#animeCode {
+	text-align: left;
+	font-size: 25px;
+	font-family: Abyssinica SIL;
+	margin-top: -25px;
+	color: white;
+	margin-left: 50px;
+}
+#masterCode {
+	color: red;
+	font-family: Ubuntu Medium;
+}
+#hrefCode {
+	text-decoration: none;
+}
+#myLogo {
+	margin-right: 1400px;
+	margin-top: -30px;
+}
+.collections {
+	background-color: #000000;
+	width: 1000px;
+	height: 210px;
+	display: none;
+	margin-left: 50px;
+	margin-top: -200px;
+	color: red;
+}
+.secondList {
+	float: right;
+	margin-top: -210px;
+	margin-right: 650px;
+}
+.thirdList {
+	margin-top: -210px;
+	margin-left: 450px;
+}
+.fourthList {
+	margin-top: -210px;
+	margin-left: 760px;
+}
+li:hover {
+	color: white;
+}
+#href:hover{
+   text-decoration: none;
+   padding: 5px;
+   color: #FFE4C4;
+}
+#hrefCode1 {
+	margin-left: 100px;
+}
+#animeCode1 {
+	text-align: left;
+	font-size: 25px;
+	font-family: Abyssinica SIL;
+	margin-top: -25px;
+	color: white;
+	margin-left: 50px;
+}
+#masterCode1 {
+	color: red;
+	font-family: Ubuntu Medium;
+}
+.myTabs1 {
+	background-color: #000000;
+	color: #A9A9A9; 
+	height: 40px;
+	text-align: right;
+}
+#me {
+	margin-top: 5px;
+}
+#me:hover {
+	color: #D2691E; 
+}
+#home, #about, #collect, #login, #logout {
+	padding: 6px;
+}
+#myLogo {
+	width: 35px;
+	height: 35px;
+	margin-top: -40px;
+	margin-left: 15px;
+}
+#carIMG {
+	width: 200px;
+	height: 200px;
+}
+#myCarousel {
+	width: 200px;
+	height: 200px;
+	margin-left: 23px;
+}
+#myCarousel1 {
+	margin-top: -220px;
+	margin-left: 257px;
+	width: 200px;
+	height: 200px;
+}
+#myCarousel2 {
+	margin-top: -220px;
+	margin-left: 493px;
+	width: 200px;
+	height: 200px;
+}#myCarousel3 {
+	margin-top: -220px;
+	margin-left: 727px;
+	width: 200px;
+	height: 200px;
+}
+.carousel-inner {
+	margin-top: 20px;
+}
+.carousel-field {
+	width: 950px;
+	height: 320px;
+	border: #ffffff 2px solid;
+	margin-top: 110px;
+	margin-left: 22px;
+}
+#fairy-id {
+	width: 150px;
+	height: 50px;
+}
+#naruto-id {
+	width: 150px;
+	height: 50px;
+}
+#one-piece-id {
+	width: 150px;
+	height: 50px;
+}
+#bleach-id {
+	width: 150px;
+	height: 50px;
+}
+.news-anime {
+	width: 908px;
+	background-color: #000000;
+	margin-left: 45px;
+	height: 40px;
+}
+#news-button {
+	margin-left: 10px;
+	margin-top: 3px;
+}
+#span-message {
+	color: #ffffff;
+	font-size: 13px;
+}
+#k-id {
+	font-size: 13px;
+}
+#k-id:hover {
+	color: #4682B4;
+}
+#hr-id {
+	width: 742px;
+	margin-left: 210px;
+	margin-top: -10px;
+}
+.btn_left_right{
+	margin-left: 20px;
+}
+#dvd-id, #manga-id, #games-id {
+	font-weight: bold;
+	margin-top: 5px;
+	height: 45px;
+	width: 90px;
+	border-radius: 2px 2px 2px 2px;
+}
+#dvd-id {
+	margin-left: 10px;
+}
+.active-button {
+	background-color: gray;
+	color: white;
+}
+#div-title {
+	margin-left: 44px; 
+	font-weight: bold;
+}
+.btn-field {
+	background-color: #E6E6FA;
+	border: 1px #D3D3D3 solid;
+	border-radius: 3px 3px 3px 3px;
+	width: 908px;
+	margin-left: 45px;
+	height: 55px;
+}
+.buttons-class {
+	border: 2px #D3D3D3 solid;
+	border-radius: 3px 3px 3px 3px;
+	width: 80px;
+	height: 40px;
+	margin-left: 820px;
+	margin-top: -45px;
+}
+#btn_right_arrow, #btn_left_arrow {
+	height: 30px;
+	margin-top: 5px;
+}
+#btn_left_arrow {	
+	margin-left: 5px;
+}
