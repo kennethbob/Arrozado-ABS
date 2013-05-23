@@ -1,15 +1,13 @@
 $(document).ready(function(){
 
 	$("#login").click(function(){
-		$(".login").fadeIn(2000);
-		$(".registration").hide();
+		$("#myModal1").modal('show');
 	});
 	$("#registration").click(function(){
-		$(".registration").fadeIn(2000);
-		$(".login").hide();
+		$("#myModal").modal('show');
 	});
 	$("#collect").click(function(){
-		$(".collections").show();
+		$(".collections").toggle();
 	});
 	$("#dvd-id").click(function(){
 		$("#dvd-id").addClass("active-button");
@@ -26,19 +24,16 @@ $(document).ready(function(){
 		$("#manga-id").removeClass("active-button");
 		$("#games-id").addClass("active-button");
 	});
-	$("#close-button").click(function(){
-		$(".registration").hide();
-	});
 
 	$("#k-id2").hide();
 	$("#span-message1").hide();
 	
 	$("#k-id").fadeIn(5000);
 		$("#k-id").fadeOut(5000);
-	$("#k-id2").fadeIn(5000);
+	$("#k-id2").fadeIn(25000);
 	$("#span-message").fadeIn(5000);
 		$("#span-message").fadeOut(5000);
-	$("#span-message1").fadeIn(5000);
+	$("#span-message1").fadeIn(25000);
 	$("#myReg_btn").click(function(){
 		
 		$firstname = $("#firstname").val();

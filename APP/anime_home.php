@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <title>Anime Master|Home</title>
@@ -20,14 +21,14 @@
 <body>
 	<div class = "myTabs">
 		<i class = "icon-home icon-white"></i>
-		<h10 id = "home">Home</h10>
+		<h10 id = "home"><a id = "home-href" href = "anime_home.php">Home</a></h10>
 		<i class = "icon-book icon-white"></i>
 		<h10 id = "about">About</h10>
 		<i class = "icon-briefcase icon-white"></i>
 		<h10 id = "collect">Collections</h10>
-		<h10 id = "registration" role = "button" class = "btn" data-toggle = "modal">Register</h10>
+		<h10 id = "registration"><a href="#myModal1" role="button" class="btn" data-toggle="modal"><i class = "icon-list-alt icon-black"></i>&nbsp;Register</a></h10>
 		<i class = "icon-arrow-down icon-white"></i>
-		<h10 id = "login">Login</h10>
+		<span id = "login"><a href="#myModal" data-toggle="modal"><img id = "login-image" src = "IMG/login-button.png"/></a></span>
 	<a href = "anime_home.php" id = "hrefCode"><h5 id = "animeCode">ANIME<span id = "masterCode">master</span></h5></a>
 	<img id = "myLogo" src = "IMG/afro.png"/>		
 	</div>
@@ -158,19 +159,29 @@
 		</fieldset>
 	</fieldset>
 </div>
-	<div class = "login">
+<div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+	<div class="modal-header">	
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class = "icon-remove"></i></button>
+    	<h3 id="myModalLabel">Login</h3>	
+	</div>
+	<div class="modal-body">
 		<form method = "POST">
 			Username:</br> <input type = "text" id = "user" name = "username"/></br>
 			Password:</br> <input type = "password" id = "pass" name = "password"/>		
 		</form>
 	</div>
-	<div class = "registration" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden = "true" aria-labelledby="myModalLabel" data-backdrop = "static">
+	<div class="modal-footer">
+    	<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    	<button class="btn btn-primary">Ok</button>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
 	<div class = "modal-header">	
-	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-	<h10 id = "myModalLabel">Register for free ..</h10></br>
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class = "icon-remove"></i></button>
+	<h3 id="myModalLabel">Register for free ..</h3></br>
 	</div>
 		</br>
-	<div class = "modal-body">
+	<div class="modal-body">
 		<form method = "POST">
 			Firstname:</br> <input type = "text" id = "fname" name = "firstname"/></br>
 			Lastname:</br> <input type = "text" id = "lname" name = "lastname"/></br>
@@ -183,11 +194,14 @@
 			Re-enter password:</br> <input type = "password" id = "pass2" name = "password2"/></br>
 									 <input type = "hidden" name = "id"/></br>
  				
-				<button id = "close-button">Cancel</button>
-				<button id = "myReg_btn">Submit</button>
+				
 		</form>
-		</div><!-- modal ends -->			
 	</div>
+	<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    		<button class="btn btn-primary">Submit</button>
+	</div>
+</div><!-- modal ends -->			
 	<div class = "collections">
 		<ul class = "firstList">
 			<li><a href = "#" id = "href">Naruto Shippuden</a></li>

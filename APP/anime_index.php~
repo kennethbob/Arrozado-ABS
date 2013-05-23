@@ -23,10 +23,9 @@
 		<h10 id = "home">Home</h10>
 		<i class = "icon-briefcase icon-white"></i>
 		<h10 id = "collect">Collections</h10>
-		<i class = "icon-user icon-white"></i>
-		<h10 id = "me" role = "button" class = "btn" data-toggle = "modal">Me</h10>
+		<h10 id = "me" role = "button" class = "btn" data-toggle = "modal"><i class = "icon-user icon-black"></i>&nbsp;Me</h10>
 		<i class = "icon-arrow-up icon-white"></i>
-		<h10 id = "logout">Logout</h10>
+		<h10 id = "logout"><a id = "logout-href" href = "anime_home.php">Logout</a></h10>
 	<a href = "anime_index.php" id = "hrefCode1"><h5 id = "animeCode1">ANIME<span id = "masterCode1">master</span></h5></a>
 	<img id = "myLogo" src = "IMG/afro.png"/>		
 	</div>

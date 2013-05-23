@@ -22,25 +22,35 @@ body {
 #registration:hover {
 	color: #D2691E;
 }
-#home, #collect, #about, #login, #logout {
+#home, #collect, #about, #login, #logout, #me {
 	font-size: 12px;
 	margin-top: 10px;
+	font-weight: bold;
+}
+#home-href, #logout-href {
+	color: #A9A9A9;
+}
+#home-href:hover, #logout-href:hover {
+	text-decoration: none;
+	color: #ffffff;
 }
 #registration {
-	margin-top: 5px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+#login-image {
+	width: 120px;
+	height: 35px;
+	margin-top: 2px;
 }
 .login, .registration {
 	display: none;
 }
-.registration {
-	text-align: center;
+#myModal {
 	background-image: url('IMAGES/anime4.jpg');
-	width: 400px;
-	position: center;
+	text-align: center;
+	width: 500px;
 	color: white;
-	margin-left: 500px;
-	margin-top: 100px;
-	border: 1px black solid;
 }
 #myModalLabel {
 	color: #000000;
@@ -49,7 +59,7 @@ body {
 	text-align: left;
 	font-size: 25px;
 	font-family: Abyssinica SIL;
-	margin-top: -25px;
+	margin-top: -30px;
 	color: white;
 	margin-left: 50px;
 }

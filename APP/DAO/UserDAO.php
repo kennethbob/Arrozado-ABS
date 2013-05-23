@@ -23,10 +23,10 @@
 			$this->close(); 
 		}
 
-		function registered ($firstname, $lastname, $address, $gender, $contact_number, $email_address, $username, $password, $password2){
+		function authorized ($firstname, $lastname, $address, $gender, $contact_number, $email_address, $username, $password, $password2){
                   $this->open();
                   
-                  $stmt= $this->dbh->prepare("INSERT INTO registered (firstname, lastname, address, gender, contact_number, email_address, username, password, password2)values (?,?,?,?,?,?,?,?,?)");
+                  $stmt= $this->dbh->prepare("INSERT INTO anime_registered (firstname, lastname, address, gender, contact_number, email_address, username, password, password2)values (?,?,?,?,?,?,?,?,?)");
                   $stmt->bindParam(1, $firstname);
                   $stmt->bindParam(2, $lastname);
                   $stmt->bindParam(3, $address);
@@ -37,7 +37,7 @@
                   $stmt->bindParam(8, $password);
                   $stmt->bindParam(9, $password2);
                   $stmt->execute();
-                  $id = $this->dbh->lastInsertId();
+                  $anime_id = $this->dbh->lastInsertId();
                  
                 
                   
