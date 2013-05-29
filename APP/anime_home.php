@@ -1,4 +1,22 @@
+<?php
+	session_start();
+	include 'DAO/UserDAO.php';
+	$action = new UserDAO();
+		if(isset($_REQUEST['username']) && isset($_REQUEST['password'])){	
+			$verrify = $action->logIn($_REQUEST['username'],$_REQUEST['password']);	
+		if($verrify){
+				$_SESSION['username'] = $_REQUEST['username'];
+				
+				
+				header('Location: pmook_index.php');	
+			}else{
+					$errMsg = "<div id = 'myphp'><img id = 'war' src = 'icons/warning-icon.png'>Username and Password didn't match</div>";
+			}
+			
+		}
 
+?>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Anime Master|Home</title>
@@ -26,9 +44,8 @@
 		<h10 id = "about">About</h10>
 		<i class = "icon-briefcase icon-white"></i>
 		<h10 id = "collect">Collections</h10>
-		<h10 id = "registration"><a href="#myModal1" role="button" class="btn" data-toggle="modal"><i class = "icon-list-alt icon-black"></i>&nbsp;Register</a></h10>
-		<i class = "icon-arrow-down icon-white"></i>
-		<span id = "login"><a href="#myModal" data-toggle="modal"><img id = "login-image" src = "IMG/login-button.png"/></a></span>
+		<h10 id = "registration"><a href="#myModal" role="button" class="btn" data-toggle="modal"><i class = "icon-list-alt icon-black"></i>&nbsp;Register</a></h10>&nbsp;
+		<h10 id = "login"><a href="#loginModal" role="button" class="btn" data-toggle="modal"><i class = "icon-arrow-down icon-black"></i>&nbsp;Login</a></h10>
 	<a href = "anime_home.php" id = "hrefCode"><h5 id = "animeCode">ANIME<span id = "masterCode">master</span></h5></a>
 	<img id = "myLogo" src = "IMG/afro.png"/>		
 	</div>
@@ -145,6 +162,130 @@
 	<a href = "anime_news_details.php"><img id = "news-button" src = "IMG/news_button.png"/></a> <a id = "k-id" href = "k.php">&nbsp;K-anime is now on our list ! A First Look </a> <span id = "span-message">&nbsp;&nbsp;ANIMEmaster is inviting you to join us to get more anime stories and know more about us ..</span>
 	<a id = "k-id2" href = "k.php">&nbsp;asdadasdasddasdasd</a> <span id = "span-message1">&nbsp;&nbsp;asdasdasdasdassdgjfj hdhd sgsgsgsdsdfsdfsf.</span> 
 </div></br>
+<div class = "div-content">
+	<button id = "most-popular-anime">Most Popular Animes</button></br></br>
+	<button id = "least-popular-anime">Least Popular Animes</button></br></br>
+	<button id = "most-read-books">Most Read Books</button></br></br>
+	<button id = "least-read-books">Least Read Books</button>
+
+	<fieldset class = "items-field">
+	<div class = "most-pop-div">
+		<fieldset class = "history-field1">
+			<img id = "history-image" src = "IMG/nar-sas.jpg"/>
+			<p id = "history-title">NARUTO SHIPPUDEN</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong>bt. year 1999</strong></em>
+			<em id = "history-message">Writer : <strong>Mashahi Kishimoto</strong></em>
+			<em id = "history-message">Publisher : <strong>Shueisha</strong></em>
+			<em id = "history-message">Producer : <strong>Studio Pierrot</strong></em>
+		</fieldset>
+		<fieldset class = "history-field2">
+			<img id = "history-image" src = "IMG/bleach.jpg"/>
+			<p id = "history-title">BLEACH</p>
+			<hr id = "history-hr"/>	
+			<em id = "history-message">Created : <strong>January 5, 2002</strong></em>
+			<em id = "history-message">Writer : <strong>Tite Kubo.</strong></em>
+			<em id = "history-message">Publisher : <strong>Shueisha</strong></em>
+			<em id = "history-message">Producer : <strong>Studio Pierrot</strong></em>
+		</fieldset>
+		<fieldset class = "history-field3">
+			<img id = "history-image1" src = "IMG/FT1.jpg"/>
+			<p id = "history-title1">FAIRYTAIL</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong>December 15, 2006</strong></em>
+			<em id = "history-message">Writer : <strong>Hiro Mashima</strong></em>
+			<em id = "history-message">Publisher : <strong>Kodansha</strong></em>
+			<em id = "history-message">Producer : <strong>A-1 Pictures</strong></em>
+		</fieldset>
+		<fieldset class = "history-field4">
+			<img id = "history-image1" src = "IMG/suoh2.jpg"/>
+			<p id = "history-title1">K PROJECT</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong>October 4, 2012</strong></em>
+			<em id = "history-message">Writer : <strong>GoRA</strong></em>
+			<em id = "history-message">Publisher : <strong>Animax Asia</strong></em>
+			<em id = "history-message">Producer : <strong>Studio GoHands</strong></em>
+		</fieldset>
+	</div>
+	<div class = "least-pop-div">
+		<fieldset class = "history-field1">
+			<img id = "history-image" src = "IMG/nar-sas.jpg"/>
+			<p id = "history-title">NARUTO SHIPPUDEN</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong></strong></em>
+			<em id = "history-message">Writer : <strong></strong></em>
+			<em id = "history-message">Publisher : <strong></strong></em>
+			<em id = "history-message">Producer : <strong></strong></em>
+		</fieldset>
+		<fieldset class = "history-field2">
+			<img id = "history-image" src = "IMG/bleach.jpg"/>
+			<p id = "history-title">BLEACH</p>
+			<hr id = "history-hr"/>	
+			<em id = "history-message">Created : <strong></strong></em>
+			<em id = "history-message">Writer : <strong></strong></em>
+			<em id = "history-message">Publisher : <strong></strong></em>
+			<em id = "history-message">Producer : <strong></strong></em>
+		</fieldset>
+		<fieldset class = "history-field3">
+			<img id = "history-image1" src = "IMG/FT1.jpg"/>
+			<p id = "history-title1">FAIRYTAIL</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong></strong></em>
+			<em id = "history-message">Writer : <strong></strong></em>
+			<em id = "history-message">Publisher : <strong></strong></em>
+			<em id = "history-message">Producer : <strong></strong></em>
+		</fieldset>
+		<fieldset class = "history-field4">
+			<img id = "history-image1" src = "IMG/suoh2.jpg"/>
+			<p id = "history-title1">K PROJECT</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong></strong></em>
+			<em id = "history-message">Writer : <strong></strong></em>
+			<em id = "history-message">Publisher : <strong></strong></em>
+			<em id = "history-message">Producer : <strong></strong></em>
+		</fieldset>
+	</div>
+	<div class = "most-read-div">
+		<fieldset class = "history-field1">
+			<img id = "history-image" src = "IMG/nar-sas.jpg"/>
+			<p id = "history-title">asdafgdg</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong></strong></em>
+			<em id = "history-message">Writer : <strong></strong></em>
+			<em id = "history-message">Publisher : <strong></strong></em>
+			<em id = "history-message">Producer : <strong></strong></em>
+		</fieldset>
+		<fieldset class = "history-field2">
+			<img id = "history-image" src = "IMG/bleach.jpg"/>
+			<p id = "history-title">asdasdasd</p>
+			<hr id = "history-hr"/>	
+			<em id = "history-message">Created : <strong></strong></em>
+			<em id = "history-message">Writer : <strong></strong></em>
+			<em id = "history-message">Publisher : <strong></strong></em>
+			<em id = "history-message">Producer : <strong></strong></em>
+		</fieldset>
+		<fieldset class = "history-field3">
+			<img id = "history-image1" src = "IMG/FT1.jpg"/>
+			<p id = "history-title1">dgzcxvxc</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong></strong></em>
+			<em id = "history-message">Writer : <strong></strong></em>
+			<em id = "history-message">Publisher : <strong></strong></em>
+			<em id = "history-message">Producer : <strong></strong></em>
+		</fieldset>
+		<fieldset class = "history-field4">
+			<img id = "history-image1" src = "IMG/suoh2.jpg"/>
+			<p id = "history-title1">dgsysf</p>
+			<hr id = "history-hr"/>
+			<em id = "history-message">Created : <strong></strong></em>
+			<em id = "history-message">Writer : <strong></strong></em>
+			<em id = "history-message">Publisher : <strong></strong></em>
+			<em id = "history-message">Producer : <strong></strong></em>
+		</fieldset>
+	</div>
+	
+	</fieldset>
+</div>
 <div class = "btn-left-right">
 	<div class = "section-divider">
 		<span id = "div-title">FEATURED PRODUCTS</span><hr id = "hr-id"/>
@@ -158,31 +299,76 @@
 			<img id = "btn_right_arrow" src = "IMG/Button-Next-icon.png"/>
 		</fieldset>
 	</fieldset>
+<div class = "products-class">
+	<div class = "dvd-class">
+		<img id = "FPDVDnar-id" src = "IMG/narDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDble-id" src = "IMG/bleDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDkek-id" src = "IMG/kekDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDinu-id" src = "IMG/inuDVD1.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDvkn-id" src = "IMG/vknDVD.jpg"/>
+	</div>
+	<div class = "manga-class">
+		<img id = "FPDVDnar-id" src = "IMG/narDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDnar-id" src = "IMG/narDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDnar-id" src = "IMG/narDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDnar-id" src = "IMG/narDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDnar-id" src = "IMG/narDVD.jpg"/>
+	</div>
+	<div class = "games-class">
+		<img id = "FPDVDnar-id" src = "IMG/bleDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDnar-id" src = "IMG/bleDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDnar-id" src = "IMG/bleDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDnar-id" src = "IMG/bleDVD.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id = "FPDVDnar-id" src = "IMG/bleDVD.jpg"/>
+	</div>
 </div>
-<div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+	<div class = "sales-div">
+		<fieldset class = "products-details">
+			<p>asdasasf</p>
+		</fieldset>
+	</div>
+<div class = "dialog-sales" title = "Buy">
+	<p id = "message-dialog">Transaction ..</p>
+	<form class = "buying_form">
+		Pieces: <input type = "text" id = "pieces" name = "pieces"></br>
+					<input type = "hidden" name = "id"/></br>
+				
+			<button type = "submit" id = "buy-btn">Buy</button>
+			<button id = "close-btn">Cancel</button>	
+	</form>
+</div>
+<div id="loginModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+	
 	<div class="modal-header">	
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class = "icon-remove"></i></button>
-    	<h3 id="myModalLabel">Login</h3>	
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class = "icon-remove icon-white"></i></button>
+    	<h3 id="myModalLabelme">Login</h3>	
 	</div>
 	<div class="modal-body">
-		<form method = "POST">
-			Username:</br> <input type = "text" id = "user" name = "username"/></br>
-			Password:</br> <input type = "password" id = "pass" name = "password"/>		
+		<form method = "POST" action = "anime_index.php">
+			Username:</br> <input type = "text" id = "user" name = "username_entered"/></br>
+			Password:</br> <input type = "password" id = "pass" name = "password_entered"/>
+			<?php 
+				if (isset($errMsg)) {
+					echo $errMsg;
+				}
+			 ?>
+			<div class="modal-footer">
+			 	<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+			 	<button class="btn btn-primary">Ok</button>
+		 	</div>
 		</form>
+		
 	</div>
-	<div class="modal-footer">
-    	<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-    	<button class="btn btn-primary">Ok</button>
-  </div>
+	
 </div>
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+<div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
 	<div class = "modal-header">	
-	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class = "icon-remove"></i></button>
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class = "icon-remove icon-black"></i></button>
 	<h3 id="myModalLabel">Register for free ..</h3></br>
 	</div>
 		</br>
 	<div class="modal-body">
-		<form method = "POST">
+		<form id = "register_form">
 			Firstname:</br> <input type = "text" id = "fname" name = "firstname"/></br>
 			Lastname:</br> <input type = "text" id = "lname" name = "lastname"/></br>
 			Address:</br> <input type = "text" id = "address" name = "address"/></br>
@@ -199,45 +385,45 @@
 	</div>
 	<div class="modal-footer">
 			<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-    		<button class="btn btn-primary">Submit</button>
+    		<button id = "myReg" data-dismiss = "modal" aria-hidden = "true" class="btn btn-primary">Submit</button>
 	</div>
 </div><!-- modal ends -->			
 	<div class = "collections">
 		<ul class = "firstList">
-			<li><a href = "#" id = "href">Naruto Shippuden</a></li>
-			<li><a href = "#" id = "href">One Piece</a></li>
-			<li><a href = "#" id = "href">Bleach</a></li>
-			<li><a href = "#" id = "href">Fairytail</a></li>
-			<li><a href = "#" id = "href">Fullmetal Alchemist</a></li>
-			<li><a href = "#" id = "href">K Anime Project</a></li>
-			<li><a href = "#" id = "href">Dragon Ball</a></li>
-			<li><a href = "#" id = "href">Magi</a></li>
-			<li><a href = "#" id = "href">Tiger & Bunny</a></li>
-			<li><a href = "#" id = "href">Reborn</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Naruto Shippuden</a></li>
+			<li id = "li-info"><a href = "#" id = "href">One Piece</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Bleach</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Fairytail</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Fullmetal Alchemist</a></li>
+			<li id = "li-info"><a href = "#" id = "href">K Anime Project</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Dragon Ball</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Magi</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Tiger & Bunny</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Reborn</a></li>
 		</ul>
 		<ul class = "secondList">
-			<li><a href = "#" id = "href">Zetman</a></li>
-			<li><a href = "#" id = "href">Neuro</a></li>
-			<li><a href = "#" id = "href">Accel World</a></li>
-			<li><a href = "#" id = "href">Buso Renkin</a></li>
-			<li><a href = "#" id = "href">Hikaru No Go</a></li>
-			<li><a href = "#" id = "href">Blue Exorcist</a></li>
-			<li><a href = "#" id = "href">Death Note</a></li>
-			<li><a href = "#" id = "href">I"s</a></li>
-			<li><a href = "#" id = "href">Strawberry 100%</a></li>
-			<li><a href = "#" id = "href">Full Moon</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Zetman</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Neuro</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Accel World</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Buso Renkin</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Hikaru No Go</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Blue Exorcist</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Death Note</a></li>
+			<li id = "li-info"><a href = "#" id = "href">I"s</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Strawberry 100%</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Full Moon</a></li>
 		</ul>
 		<ul class = "thirdList">			
-			<li><a href = "#" id = "href">Honey and Clover II</a></li>
-			<li><a href = "#" id = "href">The Prince of Tennis</a></li>
-			<li><a href = "#" id = "href">Nana</a></li>
-			<li><a href = "#" id = "href">Ultra Maniac</a></li>
-			<li><a href = "#" id = "href">Cross Game</a></li>
-			<li><a href = "#" id = "href">Inuyasha</a></li>
-			<li><a href = "#" id = "href">Vampire Knight</li>
-			<li><a href = "#" id = "href">Kekkaishi</a></li>
-			<li><a href = "#" id = "href">MAR</a></li>
-			<li><a href = "#" id = "href">Blue Dragon: Trials of the 7 Shadows</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Honey and Clover II</a></li>
+			<li id = "li-info"><a href = "#" id = "href">The Prince of Tennis</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Nana</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Ultra Maniac</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Cross Game</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Inuyasha</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Vampire Knight</li>
+			<li id = "li-info"><a href = "#" id = "href">Kekkaishi</a></li>
+			<li id = "li-info"><a href = "#" id = "href">MAR</a></li>
+			<li id = "li-info"><a href = "#" id = "href">Blue Dragon: Trials of the 7 Shadows</a></li>
 		</ul>
 		<ul class = "fourthList">	
 			<li><a href = "#" id = "href">Naoki Urasawa's Monster</a></li>

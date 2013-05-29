@@ -4,7 +4,7 @@ body {
 .wholeDiv {
 	background-color: white;
 	width: 1000px;
-	height: 1000px;
+	height: 1100px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -100px;
@@ -35,31 +35,44 @@ body {
 	color: #ffffff;
 }
 #registration {
-	margin-top: 10px;
 	font-weight: bold;
 }
+.btn {
+	margin-top: 5px;
+}
 #login-image {
-	width: 120px;
+	width: 90px;
 	height: 35px;
 	margin-top: 2px;
 }
 .login, .registration {
 	display: none;
 }
-#myModal {
+#loginModal1 {
+	background-color: #000000; 
+	text-align: center;
+	width: 500px;
+	color: #00FFFF;
+}
+#myModal1 {
 	background-image: url('IMAGES/anime4.jpg');
 	text-align: center;
 	width: 500px;
-	color: white;
+	color: #00FFFF;
 }
 #myModalLabel {
-	color: #000000;
+	color: #DC143C;
+}
+#myModalLabelme {
+	color: #ffffff;
+	font-family: Abyssinica SIL;
+	text-align: center;
 }
 #animeCode {
 	text-align: left;
 	font-size: 25px;
 	font-family: Abyssinica SIL;
-	margin-top: -30px;
+	margin-top: -25px;
 	color: white;
 	margin-left: 50px;
 }
@@ -95,9 +108,6 @@ body {
 .fourthList {
 	margin-top: -210px;
 	margin-left: 760px;
-}
-li:hover {
-	color: white;
 }
 #href:hover{
    text-decoration: none;
@@ -176,6 +186,22 @@ li:hover {
 	margin-top: 110px;
 	margin-left: 22px;
 }
+.carousel-field1 {
+	width: 950px;
+	height: 320px;
+	border: #000000 2px solid;
+	margin-top: 110px;
+	margin-left: 22px;
+}
+#account-image {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#hr-img {
+	width: 955px;
+	margin-left: 22px;
+	font-weight: bold;
+}
 #fairy-id {
 	width: 150px;
 	height: 50px;
@@ -217,8 +243,8 @@ li:hover {
 	margin-left: 210px;
 	margin-top: -10px;
 }
-.btn_left_right{
-	margin-left: 20px;
+.section-divider {
+	margin-top: 50px;
 }
 #dvd-id, #manga-id, #games-id {
 	font-weight: bold;
@@ -260,4 +286,187 @@ li:hover {
 }
 #btn_left_arrow {	
 	margin-left: 5px;
+}
+#FPDVDnar-id {
+	width: 140px;
+	height: 150px; 
+	margin-left: 20px;
+	cursor: pointer;
+}
+#FPDVDble-id {
+	width: 140px;
+	height: 150px; 
+	margin-left: 20px;
+	cursor: pointer;
+}
+#FPDVDkek-id {
+	width: 140px;
+	height: 150px; 
+	margin-left: 20px;
+	cursor: pointer;
+}
+#FPDVDinu-id {
+	width: 140px;
+	height: 150px; 
+	margin-left: 20px;
+	cursor: pointer;
+}
+#FPDVDvkn-id {
+	width: 140px;
+	height: 150px; 
+	margin-left: 20px;
+	cursor: pointer;
+}
+.products-class {
+	border: 1px red solid;
+	width: 908px;
+	margin-left: 45px;
+	margin-top: 15px;
+}
+.sales-div {
+	display: none;
+}
+.dialog-sales {
+	display: none;
+}
+#accountModal {
+	background-image: url('IMAGES/anime.png');
+	width: 510px;
+}
+#edit-info {
+	margin-left: 440px;
+	margin-top: -20px;
+	color: #87CEEB;
+}
+#info-label {
+	color: #ffffff;
+}
+#info-li {
+	color: #F4A460;
+	margin-left: 40px;
+}
+#edit-info:hover {
+	text-decoration: underline;
+	color: #4169E1;
+	cursor: pointer;
+}
+#li-info:hover {
+	color: white;
+}
+#most-popular-anime, #least-popular-anime, #most-read-books, #least-read-books {
+	margin-left: 42px;
+	height: 60px; 
+	width: 250px;
+	font-weight: bold;
+}
+.button-active {
+	background: -webkit-linear-gradient(top, #f85032 11%,#f6290c 20%,#f16f5c 50%,#f02f17 71%,#e73827 75%);
+	color: #ffffff;
+}
+#most-popular-anime:hover, #least-popular-anime:hover, #most-read-books:hover, #least-read-books:hover {
+	background: -webkit-linear-gradient(top, #f85032 11%,#f6290c 20%,#f16f5c 50%,#f02f17 71%,#e73827 75%);
+	border: 3px #C0C0C0 solid;
+}
+.items-field {
+	border: 2px #A9A9A9 solid;
+	width: 620px;
+	height: 300px;
+	margin-left: 330px;
+	margin-top: -300px;
+}
+.history-field1 {
+	border: 2px #D3D3D3 solid;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 300px;
+	height: 140px;
+}
+.history-field2 {
+	border: 2px #D3D3D3 solid;
+	margin-top: -144px;
+	width: 300px;
+	height: 140px;
+	margin-left: 310px;
+}
+.history-field3 {
+	border: 2px #D3D3D3 solid;
+	margin-top: 5px;
+	width: 300px;
+	height: 137px;
+	margin-left: 5px;
+}
+.history-field4 {
+	border: 2px #D3D3D3 solid;
+	margin-top: -141px;
+	width: 300px;
+	height: 137px;
+	margin-left: 310px;
+}
+#history-image {
+	width: 100px;
+	height: 140px;
+	cursor: pointer;
+}
+#history-img {
+	width: 100px;
+	height: 140px;
+	cursor: pointer;
+}
+#history-image1 {
+	width: 100px;
+	height: 137px;
+	cursor: pointer;
+}
+#history-img1 {
+	width: 100px;
+	height: 137px;
+	cursor: pointer;
+}
+#history-title {
+	margin-left: 125px;
+	margin-top: -130px;
+}
+#history-title1 {
+	margin-left: 125px;
+	margin-top: -130px;
+}
+#history-hr {
+	width: 180px;
+	margin-left: 110px;
+	margin-top: -10px;
+}
+#history-message {
+	margin-left: 100px;
+	margin-top: -1000px;
+}
+.least-pop-div {
+	display: none;
+}
+.most-read-div {
+	display: none;
+}
+.most-pop-div1 {
+	display: none;
+}
+#myphp {
+	text-align: center;
+	border: solid 1px #DEDEDE;
+	background: #FEEFB3 url(icons/warning-icon.png) 8px 6px no-repeat;
+	color: #222222;
+	padding: 9px;
+}
+#war {
+	float: left;
+	width: 30px;
+	height: 27px;
+}
+.added-collect-table {
+	width: 500px;
+	margin: auto;
+	text-align: center;
+}
+.collect-table {
+	width: 500px;
+	margin: auto;
+	text-align: center;
 }
